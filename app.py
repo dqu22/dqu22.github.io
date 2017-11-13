@@ -83,8 +83,10 @@ def get_trend(id):
                 array.append({'c1': v['bookingstotal'], 'c2': v['rating']})
     return render_template('chart.html', legend=legend, array=array)
 
-@app.route("/search", methods=["POST"])
+@app.route("/search", methods=["GET", "POST"])
 def search():
+    if request.method == "GET":
+        return oops("You shouldn't be here!")
     longitude = float(request.form['long'])
     latitude = float(request.form['lat'])
     print(longitude, latitude)

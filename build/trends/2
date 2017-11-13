@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Trends</title>
+    <!-- import plugin script -->
+    <script src='../static/js/Chart.min.js'></script>
+  </head>
+  <body>
+    <h1>Trends:</h1>
+    <!-- bar chart canvas element -->
+    <canvas id="myChart" width="1000" height="700"></canvas>
+    <script>
+      // Global parameters:
+      // do not resize the chart canvas when its container does (keep at 600x400px)
+      Chart.defaults.global.responsive = false;
+
+
+            // get chart canvas
+      var ctx = document.getElementById("myChart").getContext("2d");
+
+      // create the chart using the chart canvas
+      var myChart = new Chart(ctx, {
+        type: 'scatter',
+        data: {
+          datasets: [{
+            label: "ratings",
+            data: []
+          }]
+        },
+      });
+    </script>
+
+  </body>
+</html>
