@@ -54,7 +54,7 @@ pycodestyle==2.3.1
 pycrypto==2.6.1
 pycurl==7.43.0
 pyflakes==1.6.0
-Pygments==2.1
+Pygments==2.7.4
 pyOpenSSL==0.15.1
 pyparsing==2.0.3
 pyserial==3.0.1
