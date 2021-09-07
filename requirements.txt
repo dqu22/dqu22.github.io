@@ -43,7 +43,7 @@ pandas==0.17.1
 pathlib==1.0.1
 patsy==0.4.1
 pew==1.1.0
-Pillow==3.1.2
+Pillow==8.3.2
 pipenv==8.3.2
 pprint==0.1
 prettytable==0.7.2
