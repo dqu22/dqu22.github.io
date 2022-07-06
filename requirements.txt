@@ -26,7 +26,7 @@ joblib==0.9.4
 jsonpatch==1.10
 jsonpointer==1.9
 Landscape-Client==16.3+bzr834
-lxml==3.5.0
+lxml==4.9.1
 Markdown==2.6.6
 MarkupSafe==1.0
 matplotlib==1.5.1
